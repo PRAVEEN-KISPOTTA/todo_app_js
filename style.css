@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #252525;
+}
+
+.container{
+    border: 2px solid green;
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 20px;color: #fff;
+    background-color: cadetblue;
+}
+
+.todoList{
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 20px;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 2px;
+}
