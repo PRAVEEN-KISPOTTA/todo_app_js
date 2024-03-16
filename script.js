@@ -1,12 +1,13 @@
 const listArr = [];
 const inputBox = document.querySelector(".todoBox input");
 const addBtn = document.querySelector(".todoBox button");
+const list = document.querySelector("li");
 
 // Function to handle adding item to the list
 function addItem() {
-    if(inputBox.value != ""){
+    if(inputBox.value !== ""){
         // event.preventDefault();
-        listArr.push(inputBox.value)
+        list.textContent = inputBox.value;
         console.log(listArr);
         inputBox.value = "";
     }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -10,16 +12,22 @@
     <div class="container">
         <div class="navBar">ToDo List</div>
         <div class="todoBox">
-            <input type="text" required>
+            <input type="text" placeholder="what you want to do">
             <button type="submit">Add</button>
         </div>
         <div class="todoList">
-            <div class="list">Want to go for walk</div>
-            <img src="https://cdn-icons-png.flaticon.com/128/3388/3388569.png">
+            <ul>
+                <ion-icon name="radio-button-off-outline"></ion-icon>
+                <li>Want to go for walk</li>
+            </ul>
+            <div class="cross">x</div>
         </div>
     </div>
 
 
     <script src="script.js"></script>
+
+    <!-- Library for icons -->
+    
 </body>
 </html>

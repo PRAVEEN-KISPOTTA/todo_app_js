@@ -6,13 +6,14 @@
 }
 
 body{
-    background: #252525;
+    background-color: #0093E9;
+/* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+
 }
 
 .container{
-    border: 2px solid green;
     width: 90%;
-    max-width: 470px;
+    max-width: 500px;
     margin: 100px auto 0;
     padding: 40px 35px;
     text-align: center;
@@ -23,23 +24,70 @@ body{
 
 .todoList{
     margin-top: 10px;
-    border: 2px solid brown;
     display: flex;
     justify-content: space-between;
 }
 
-.list{
+ul{
     display: flex;
     align-items: center;
 }
-img{
-    width: 20px;
-    height: auto;
-    border: 1px solid red;
-    border-radius: 20px;
-    padding: 2px;
+
+ul li{
+    display: flex;
+    align-items: center;
 }
 
-input:required:invalid {
-    border-color: red;
+ion-icon{
+    color: red;
+    padding-right: 10px;
+}
+
+.cross{
+    width: 30px;
+    height: auto;
+    border-radius: 20px;
+    padding: 2px;
+    color: #252525;
+    font-size: large;
+    font-weight: bold;
+    background-image: url("image/radio.png");
+}
+.cross:hover{
+    background-color: #edeef0;
+    cursor: pointer;
+    color: red;
+    transition-duration: 0.65s;
+}
+
+
+.todoBox{
+    display: flex;
+    background: #edeef0;
+    border-radius: 15px;
+    
+}
+
+input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+button{
+    width: 70px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #26a247;
+    font-weight: bold;
+}
+
+button:hover{
+    background: #26a247;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.65s;
 }
